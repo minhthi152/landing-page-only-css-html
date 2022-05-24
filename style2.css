@@ -294,4 +294,13 @@
     #check:checked ~ label #btn-cancel{
         display: block;
     }
+
+    
 }
+/* .gap{
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    background-color: rgb(231, 22, 22);
+    clear: both;
+} */
