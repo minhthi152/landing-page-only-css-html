@@ -1,0 +1,297 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    color: #1b1b1b;
+    font-family: 'Poppins', sans-serif;
+}
+ .container{
+     width: 95%;
+     margin: 0 auto;
+ }
+ .main{
+     margin-top: 70px;
+     height: 400px;
+     display: flex;
+ }
+ .nav{
+    margin-top: 1px;
+     background-color: #fff;
+     height: 1200px;
+     width: 20%;
+ }
+ 
+ .article{
+     background-color: blue;
+     height: 100px;
+ }
+ .sub-footer{
+     background-color: chocolate;
+     height: 100px;
+ }
+ 
+ .logo{
+     color:#fff;
+ }
+ 
+/* CSS for header */
+ .header{
+    top: 0;
+    position: fixed;
+    background-color: #1b1b1b;
+    height: 70px;
+    width: 100%;
+}
+#home{
+    color: cyan;
+    padding-right: 6px;
+}
+ header:after{
+    content: "";
+    clear: both;
+    display: table;
+ }
+
+ .header ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+.header ul li{
+    float: left;
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 5px;
+}
+.header ul li a{
+    color: white;
+    text-decoration: none;
+   line-height: 70px;
+    font-size: 18px;
+    padding: 14px, 15px;
+}
+.header ul ul{
+    position: absolute;
+    top: 90px;
+    visibility: hidden;
+    opacity: 0;
+}
+.header ul li:hover > ul{
+    opacity: 1;
+    top: 72px;
+    visibility: visible;
+    transition: top .3s;
+}
+.header ul ul li{
+    position: relative;
+    margin: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+
+}
+.header ul ul li a{
+    line-height: 50px;
+}
+.header ul ul li a:hover{
+    color:cyan;
+    box-shadow: none;
+}
+.header ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+.header .logo{
+    float: left;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+}
+.header ul li a:hover{
+    border-radius: 5px;
+    color: cyan;
+    box-shadow: 0 0 5px #33ffff,
+    0 0 5px #66ffff;
+}
+.header ul li ul{
+    margin-left: -45px;
+}
+.header ul li ul li a{
+    padding-left: 20px ;
+}
+/* End CSS for header */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    clear: both;
+    background-color: #1b1b1b;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    
+    display: flex;
+   justify-content: space-between;
+
+}
+.footer .icons{
+    float: right;
+    line-height: 50px;
+    margin-left: 100px;
+}
+.footer .copy-right{
+    float: right;
+    line-height: 50px;
+    margin-right: 100px;
+}
+.footer i{
+    margin: 0 20px;
+    font-size: 20px;
+    color: cyan;
+    
+}
+.footer i:hover{
+    cursor: pointer;
+}
+.footer p{
+    color: #fff;
+    float: left;
+    font-size: 13px;
+}
+/* css aside */
+.aside{
+    margin-top: 1px;
+    background-color: #fff;
+    width: 30%;
+    height:1200px;
+}
+.aside p{
+    padding: 5px 0px 10px 15px;
+    
+    color: #1b1b1b;
+}
+
+
+/* css nav */
+.img-sale{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.nav .img-sale1{
+    width: 95%;
+    
+}
+
+/* css content */
+
+.section{
+    margin-top: 1px;
+    height: 1200;
+    width: 80%;
+ }
+
+.content{
+    /* background-color: chartreuse; */
+    display: flex;
+    border-bottom: 1px solid #ccc ;
+    
+}
+.content .div-image{
+    /* background-color: #33ffff; */
+    width: 40%;
+    float:left;
+}
+
+.content .sub-content{
+    /* background-color: black;  */
+    width: 60%; 
+    padding: 10px 20px; ;  
+}
+.image-1{
+    padding: 10px 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+.sub-content .title{
+    font-size: 17px;
+    background-color: coral;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+
+}
+.sub-content .description{
+    /* background-color: aquamarine; */
+
+    padding: 10px 15px;
+}
+.sub-content .time{
+    /* background-color:cornsilk; */
+    padding: 10px 15px;
+}
+
+
+/* css responsive nav bar */
+
+
+#btn-menu, #btn-cancel{
+    color: #fff;
+    font-size: 30px;
+    float: right;
+    padding-right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 850px){
+    #btn-menu{
+        display: block;
+    }
+    .header ul{
+        /* display: none; */
+        position: fixed;
+        width: 200px;
+        height: 370px;
+        left: -100%;
+        background: #1b1b1b;
+        text-align: center;
+        transition: all .5s;
+        display: block;
+
+    }
+    .header ul li ul{
+        /* display: none; */
+        width: 30%;
+        height: 300px;
+        left: -100%;
+        background: #1b1b1b;
+        text-align: center;
+        transition: all .5s;
+        display: block;
+
+    }
+    .header ul li{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 19px;
+    }
+    #check:checked ~ label #btn-menu{
+        display: none;
+    }
+    #check:checked ~ label #btn-cancel{
+        display: block;
+    }
+}
